@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-script = "*"
+flask-migrate = "*"
+flask-sqlalchemy = "*"
+mysql-connector-python = "*"
+flask-cors = "*"
+
+[dev-packages]
+autopep8 = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+start = "python manage.py runserver"
+init = "python manage.py db init"
+migrate = "python manage.py db migrate"
+upgrade = "python manage.py db upgrade"
+downgrade = "python manage.py db downgrade"
